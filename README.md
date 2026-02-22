@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/b2a4ec67-8822-4133-8ec7-e77b87bfce9d)
+
 # digitalWindtunnel
 Resurrecting the digital windtunnel of Richard Eppler
 
