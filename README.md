@@ -1,7 +1,7 @@
 ![image](https://github.com/user-attachments/assets/b2a4ec67-8822-4133-8ec7-e77b87bfce9d)
 
 # digitalWindtunnel
-Resurrecting the digital windtunnel of Richard Eppler. It is mentioned in his book on airfoils, but not described explicitly.
+Resurrecting the digital windtunnel of Richard Eppler. It is discussed in his book on airfoils, but not described explicitly.
 
 Here you find a version of the program itself.
 
