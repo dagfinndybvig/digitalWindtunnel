@@ -63,7 +63,7 @@ Add `C:\msys64\ucrt64\bin` to your Windows PATH.
 ### Compile
 
 ```powershell
-gfortran profile.f90 -o profile.exe
+gfortran profile.f90 -o profile.exe -static
 ```
 
 Compilation produces many warnings about legacy Fortran syntax (arithmetic IF statements, non-standard DO termination). These are expected for code of this vintage and do not affect correctness.
