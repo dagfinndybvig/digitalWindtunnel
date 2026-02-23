@@ -9,6 +9,10 @@ It was written in ancient Fortran but has been modernized to run on current Ubun
 
 Scientific report about the software enclosed as pdf. There you also find the original code and some illustrations.
 
+<img width="1100" height="619" alt="image" src="https://github.com/user-attachments/assets/8b84793f-d5c5-4b72-92e9-803fbbbc076a" />
+Sailplanes were among Eppler's specialities. Here is his obituary from a German aviation magazine:
+https://www.aerokurier.de/aerodynamik-legende-richard-eppler-verstorben/
+
 ---
 
 ## Pre-built Binaries
