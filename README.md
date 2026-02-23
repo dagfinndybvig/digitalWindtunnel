@@ -11,6 +11,17 @@ Scientific report about the software enclosed as pdf. There you also find the or
 
 ---
 
+## Pre-built Binaries
+
+Pre-built binaries are included in the repository:
+
+- `profile` — Linux (x86_64)
+- `profile.exe` — Windows (x86_64)
+
+These are provided for convenience and may be used at your own responsibility.
+
+---
+
 ## Building on Windows
 
 ### Dependencies
