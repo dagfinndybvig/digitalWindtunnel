@@ -22,6 +22,28 @@ These are provided for convenience and may be used at your own responsibility.
 
 ---
 
+## Building on Linux
+
+Install GFortran via your package manager, then compile:
+
+```bash
+# Debian/Ubuntu
+sudo apt install gfortran
+
+# Fedora/RHEL
+sudo dnf install gcc-gfortran
+
+# Arch
+sudo pacman -S gcc-fortran
+```
+
+```bash
+gfortran profile.f90 -o profile
+./profile
+```
+
+---
+
 ## Building on Windows
 
 ### Dependencies
