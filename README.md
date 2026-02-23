@@ -5,7 +5,55 @@ Resurrecting the "digital windtunnel" of Richard Eppler. The program constitutin
 
 Here you find a version of the program itself, only known as the Eppler program.
 
-It was written in ancient Fortran but has been modernized to run on current Ubuntu/Linux.
+It was written in ancient Fortran but has been modernized to run on current Ubuntu/Linux and Windows.
 
 Scientific report about the software enclosed as pdf. There you also find the original code and some illustrations.
+
+---
+
+## Building on Windows
+
+### Dependencies
+
+- **MSYS2** — https://www.msys2.org/
+- **GFortran 15.2.0** (GCC, via MSYS2 UCRT64 toolchain)
+
+Install MSYS2, then from the MSYS2 UCRT64 shell:
+
+```bash
+pacman -Syu
+pacman -S mingw-w64-ucrt-x86_64-gcc-fortran
+```
+
+Add `C:\msys64\ucrt64\bin` to your Windows PATH.
+
+### Compile
+
+```powershell
+gfortran profile.f90 -o profile.exe
+```
+
+Compilation produces many warnings about legacy Fortran syntax (arithmetic IF statements, non-standard DO termination). These are expected for code of this vintage and do not affect correctness.
+
+### Run
+
+```powershell
+.\profile.exe
+```
+
+The program prompts for an input file name. Enter e.g. `e1098.dat` to run the included sample case. Output is written to `profile.out`.
+
+### Bug fix
+
+The original source had two Fortran format strings missing commas between descriptors (lines 949–950), which compiled with only a warning under `gfortran` but caused a fatal runtime error:
+
+```fortran
+! Before (broken):
+WRITE(IDRU, '("   ALPHA0=" F7.3, " DEGREES")' ) aln
+WRITE(IDRU,'(AF7.3)') " * indicates bubble analog longer than", bbli
+
+! After (fixed):
+WRITE(IDRU, '("   ALPHA0=", F7.3, " DEGREES")' ) aln
+WRITE(IDRU,'(A,F7.3)') " * indicates bubble analog longer than", bbli
+```
 

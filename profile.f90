@@ -946,8 +946,8 @@ SUBROUTINE GRP(NAX,RE,MU,JR,ISTIFT)
 ! might want to skip this title if nax==0 OR test on KDTX
   WRITE(IDRU,'(///A)') " SUMMARY       AIRFOIL "//airfoilID
   WRITE(IDRU,*) "  ANGLE OF ATTACK RELATIVE TO THE "//altx(itit2)
-  WRITE(IDRU, '("   ALPHA0=" F7.3, " DEGREES")' ) aln
-  WRITE(IDRU,'(AF7.3)') " * indicates bubble analog longer than", bbli
+  WRITE(IDRU, '("   ALPHA0=", F7.3, " DEGREES")' ) aln
+  WRITE(IDRU,'(A,F7.3)') " * indicates bubble analog longer than", bbli
   WRITE(IDRU,49) (LR(j),mu(j),j=1,jr)
 49 FORMAT(6X, 5("   R=",I6,"000   mu=",I2))
 
