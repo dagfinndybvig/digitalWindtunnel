@@ -14,8 +14,8 @@ Sailplanes were among Eppler's (on the right) specialities. Here is his obituary
 https://www.aerokurier.de/aerodynamik-legende-richard-eppler-verstorben/
 
 
-<br>PS. Coding agents made it possible for me to do this little memorial as a side-project here at the University Library of the Norwegian University of Science and Technology.<br>
-
+<br>PS. Coding agents made it possible for me to do this little memorial as a side-project here at the Library of the Norwegian University of Science and Technology.<br>
+<br>
 
 ---
 
