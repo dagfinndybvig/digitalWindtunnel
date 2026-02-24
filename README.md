@@ -5,8 +5,11 @@ Resurrecting the "digital windtunnel" of Richard Eppler (1924-2021.) The program
 
 Here you find a version of the program itself, only known as the Eppler program.
 
-It was written in ancient Fortran but has been modernized to run on current Linux and Windows. Consult readme.txt for the the back story.
-Scientific report about the software enclosed as pdf. In the report you also find the original code and some illustrations.
+It was written in ancient Fortran but has been modernized to run on current Linux and Windows. Consult the legacy readme.txt for the the back story.
+
+Also there are some interesting historical comments in the code itself!
+
+Scientific report about the software enclosed as pdf. In the report you find the original code and some illustrations.
 
 <img width="1100" height="619" alt="image" src="https://github.com/user-attachments/assets/8b84793f-d5c5-4b72-92e9-803fbbbc076a" />
 Sailplanes were among Eppler's (on the right) specialities. Here is his obituary from a German aviation magazine, where the picture is taken from:
