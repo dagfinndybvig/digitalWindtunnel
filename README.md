@@ -5,7 +5,7 @@ Resurrecting the "digital windtunnel" of Richard Eppler (1924-2021.) The program
 
 Here you find a version of the program itself, only known as the Eppler program.
 
-It was written in ancient Fortran but has been modernized to run on current Ubuntu/Linux and Windows.
+It was written in ancient Fortran but has been modernized to run on current Ubuntu/Linux and Windows. Consult the file readme.txt to get the full history.
 
 Scientific report about the software enclosed as pdf. In the report you also find the original code and some illustrations.
 
