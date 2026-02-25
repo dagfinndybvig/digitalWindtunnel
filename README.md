@@ -15,7 +15,7 @@ The Eppler program outputs a file called profile.out. I have added a Python scri
 
 <img width="2400" height="1800" alt="combined_panel" src="https://github.com/user-attachments/assets/9b13305c-8789-439b-96dc-2c722b56d19f" />
 
-This is basically the same type of panel as Figure 7 in the TM80210 report, which is incidentially from airfoil e1097.
+This is basically the same type of panel as Figure 7 in the TM80210 report, which is incidentially based on airfoil e1097.
 
 <img width="537" height="558" alt="image" src="https://github.com/user-attachments/assets/d12b38bf-6944-40fd-ab79-27c775a8328a" />
 
