@@ -11,7 +11,7 @@ Also there are some interesting historical comments in the code itself.
 
 Scientific report about the software enclosed as pdf. In the report you find the original code and some illustrations.<br>
 
-The Eppler program outputs a file called profile.out. I have added a Python script called plot_data.py that displays a wing profile and a velcocity distribution based on this, saving the result as combined_panel.png.
+The Eppler program outputs a file called profile.out. I have added a Python script called plot_data.py that displays a wing profile and a velcocity distribution based on this, saving the result as combined_panel.png. Below you see the panel plotted after using the e1098 data as input:
 
 <img width="2400" height="1800" alt="combined_panel" src="https://github.com/user-attachments/assets/9b13305c-8789-439b-96dc-2c722b56d19f" />
 
