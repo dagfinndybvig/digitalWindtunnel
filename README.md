@@ -51,6 +51,7 @@ sudo pacman -S gcc-fortran
 gfortran profile.f90 -o profile -static
 ./profile
 ```
+Something similar should be possible on Mac, since it shares the Unix heritage.
 
 ---
 
