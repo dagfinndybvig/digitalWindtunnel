@@ -7,7 +7,7 @@ Here you find a version of the program itself, only known as the Eppler program.
 
 It was written in ancient Fortran but has been modernized to run on current Linux and Windows. Consult the legacy readme.txt for the the back story.
 
-Also there are some interesting historical comments in the code itself!
+Also there are some interesting historical comments in the code itself.
 
 Scientific report about the software enclosed as pdf. In the report you find the original code and some illustrations.<br>
 
