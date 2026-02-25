@@ -7,9 +7,20 @@ Here you find a version of the program itself, only known as the Eppler program.
 
 It was written in ancient Fortran but has been modernized to run on current Linux and Windows. Consult the legacy readme.txt for the the back story.
 
-Also there are some interesting historical comments in the code itself.
+Also there are some interesting historical comments in the code itself. Especially this:
 
-Scientific report about the software enclosed as pdf. In the report you find the original code and some illustrations.<br>
+PROGRAM Profile
+! ---------------------------------------------------------------------------
+! PURPOSE -  Analysis and design of Low Speed Airfoils
+
+! AUTHORS - Richard Eppler, Univ. of Stuttgart
+!           Dan Somers, NASA Langley Research Center
+!           Ralph Carmichael, Public Domain Aeronautical Software
+
+! NOTE - John Roncz should perhaps be listed as an author, although
+!   this particular source code is not his compressibility update.
+
+A scientific report about the software enclosed as pdf. In the report you find the original code and some illustrations.<br>
 
 The Eppler program outputs a file called profile.out. I have added a Python script called plot_data.py that displays a wing profile and a velcocity distribution based on this, saving the result as combined_panel.png. Below you see the panel plotted after using the e1098 data as input:
 
