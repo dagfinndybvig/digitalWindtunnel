@@ -9,6 +9,8 @@ It was written in ancient Fortran but has been modernized to run on current Linu
 
 Also there are some interesting historical comments in the code itself. Especially this:
 
+```bash
+
 PROGRAM Profile
 ! ---------------------------------------------------------------------------
 ! PURPOSE -  Analysis and design of Low Speed Airfoils
@@ -19,6 +21,8 @@ PROGRAM Profile
 
 ! NOTE - John Roncz should perhaps be listed as an author, although
 !   this particular source code is not his compressibility update.
+
+```
 
 A scientific report about the software enclosed as pdf. In the report you find the original code and some illustrations.<br>
 
