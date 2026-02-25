@@ -11,6 +11,12 @@ Also there are some interesting historical comments in the code itself.
 
 Scientific report about the software enclosed as pdf. In the report you find the original code and some illustrations.<br>
 
+The Eppler program outputs a file called profile.out. I have added a Python script called plot_data.py that displays a wing profile and a velcocity distribution based on this, saving the result as combined_panel.png.
+
+<img width="2400" height="1800" alt="combined_panel" src="https://github.com/user-attachments/assets/9b13305c-8789-439b-96dc-2c722b56d19f" />
+
+This is basically the same as Figure 7 in the report. Also it is the same type of figure that we find in the book on airfoils. 
+
 <img width="1100" height="619" alt="image" src="https://github.com/user-attachments/assets/8b84793f-d5c5-4b72-92e9-803fbbbc076a" />
 Sailplanes were among Eppler's (on the right) specialities. Here is his obituary from a German aviation magazine, where the picture is taken from:
 https://www.aerokurier.de/aerodynamik-legende-richard-eppler-verstorben/
