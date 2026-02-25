@@ -15,7 +15,7 @@ The Eppler program outputs a file called profile.out. I have added a Python scri
 
 <img width="2400" height="1800" alt="combined_panel" src="https://github.com/user-attachments/assets/9b13305c-8789-439b-96dc-2c722b56d19f" />
 
-This is basically the same as Figure 7 in the report. Also it is the same type of figure that we find in the book on airfoils.<br>
+This is basically the same as Figure 7 in the report. Also it is the same type of figure that we find in the book on airfoils.<br><br>
 
 <img width="1100" height="619" alt="image" src="https://github.com/user-attachments/assets/8b84793f-d5c5-4b72-92e9-803fbbbc076a" />
 Sailplanes were among Eppler's (on the right) specialities. Here is his obituary from a German aviation magazine, where the picture is taken from:
