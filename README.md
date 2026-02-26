@@ -1,7 +1,9 @@
 ![image](https://github.com/user-attachments/assets/b2a4ec67-8822-4133-8ec7-e77b87bfce9d)
 
 # digitalWindtunnel
-Resurrecting the "digital windtunnel" of Richard Eppler (1924-2021.) Why should I care, you ask?
+This project is about resurrecting the "digital windtunnel" of Richard Eppler (1924-2021.) 
+
+Why should I care, you ask?
 
 Well, if you are interested in airplanes and their design the name Eppler keeps coming up. Not the least he has given name to a whole series of airfoils that remain relevant.
 
