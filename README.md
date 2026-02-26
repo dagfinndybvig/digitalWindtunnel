@@ -46,14 +46,14 @@ This is basically the same type of panel as Figure 7 in the TM80210 report, whic
 Also it is the same type of figure that we find in the book on airfoils. So it seems that in terms of historical reconstruction we are getting somewhere.<br><br>
 
 <img width="1100" height="619" alt="image" src="https://github.com/user-attachments/assets/8b84793f-d5c5-4b72-92e9-803fbbbc076a" />
-Sailplanes were among Eppler's (on the right) specialities. Here is his obituary from a German aviation magazine, where the picture is taken from:
-https://www.aerokurier.de/aerodynamik-legende-richard-eppler-verstorben/
+<i>Sailplanes were among Eppler's (on the right) specialities. Here is his obituary from a German aviation magazine, where the picture is taken from:
+https://www.aerokurier.de/aerodynamik-legende-richard-eppler-verstorben/<i>
 
-<br>You think the aerodynamics of gliders and other low speed aircrafts is irrelevant in an age of supersonic fighters? Think again! It forms the basis of unmanned aerial vehicls (UAV), otherwise known as drones.<br>
+<br>Maybe you think the aerodynamics of gliders and other low speed aircrafts is irrelevant in an age of supersonic fighters? Think again! It forms the basis of unmanned aerial vehicls (UAV), otherwise known as drones.<br>
 
 <img width="2588" height="1120" alt="image" src="https://github.com/user-attachments/assets/3529caab-5704-446b-957c-0d4825230b76" /><br>
 
-<br>PS. Coding agents made it possible for me to do this little memorial as a side-project here at the Library of the Norwegian University of Science and Technology. Without it I would never have found the time!<br>
+<br><b>PS. Coding agents made it possible for me to do this little memorial as a side-project here at the Library of the Norwegian University of Science and Technology. Without it I would never have found the time!<b><br>
 <br>
 
 ---
