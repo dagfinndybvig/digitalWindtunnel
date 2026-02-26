@@ -54,7 +54,7 @@ https://www.aerokurier.de/aerodynamik-legende-richard-eppler-verstorben/</i>
 <img width="2588" height="1120" alt="image" src="https://github.com/user-attachments/assets/3529caab-5704-446b-957c-0d4825230b76" /><br>
 
 
-The next step could be taking alook at XFOIL, a more modern Fortran-based airfoil analysi program: https://web.mit.edu/drela/Public/web/xfoil/
+<br>The next step could be taking alook at XFOIL, a more modern Fortran-based airfoil analysi program: https://web.mit.edu/drela/Public/web/xfoil/
 
 <br><b>PS. Coding agents made it possible for me to do this little memorial as a side-project here at the Library of the Norwegian University of Science and Technology. Without it I would never have found the time!</b><br>
 <br>
