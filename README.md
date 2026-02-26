@@ -32,7 +32,7 @@ This is basically the same type of panel as Figure 7 in the TM80210 report, whic
 
 <img width="537" height="558" alt="image" src="https://github.com/user-attachments/assets/d12b38bf-6944-40fd-ab79-27c775a8328a" />
 
-Also it is the same type of figure that we find in the book on airfoils. So it seems that in terms of historical reproduction we are getting somewhere.<br><br>
+Also it is the same type of figure that we find in the book on airfoils. So it seems that in terms of historical reconstruction we are getting somewhere.<br><br>
 
 <img width="1100" height="619" alt="image" src="https://github.com/user-attachments/assets/8b84793f-d5c5-4b72-92e9-803fbbbc076a" />
 Sailplanes were among Eppler's (on the right) specialities. Here is his obituary from a German aviation magazine, where the picture is taken from:
