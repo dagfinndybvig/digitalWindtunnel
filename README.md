@@ -1,9 +1,17 @@
 ![image](https://github.com/user-attachments/assets/b2a4ec67-8822-4133-8ec7-e77b87bfce9d)
 
 # digitalWindtunnel
-Resurrecting the "digital windtunnel" of Richard Eppler (1924-2021.) The program constituting the digital windtunnel is discussed in his book on airfoils, but not described explicitly there.
+Resurrecting the "digital windtunnel" of Richard Eppler (1924-2021.) Why should I care, you ask?
 
-Here you find a version of the program itself, only known as the Eppler program.
+Well, if you are interested in airplanes and their design the name Eppler keeps coming up. Not the least he has given name to a whole series of airfoils that remain relevant.
+
+<img width="728" height="357" alt="image" src="https://github.com/user-attachments/assets/9aa5e942-cf7a-4fda-b119-c33a3b4313f0" />
+
+In particular Eppler was a pioneer in using computer programs to explore and design airfoils. He called it using a "digtial windtunnel." This is your chance to dig into that work.
+
+The program constituting the digital windtunnel is discussed in Eppler's readily available book on airfoils (shown above), but the program itself is not described explicitly there.
+
+Here you find a version of the program, only known as the Eppler program.
 
 It was written in ancient Fortran but has been modernized to run on current Linux and Windows. Consult the legacy readme.txt for the the back story.
 
