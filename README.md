@@ -5,9 +5,10 @@ This project is about resurrecting the "digital windtunnel" of Richard Eppler (1
 
 Why should I care, you ask?
 
-Well, if you are interested in airplanes and their design the name Eppler keeps coming up. Not the least he has given name to a whole series of airfoils that remain relevant.
+Well, if you are interested in airplanes and their design the name Eppler keeps coming up. Not the least he has given name to a whole series of airfoils that remain relevant, typically indicated by "E" and som number.
 
-<img width="728" height="357" alt="image" src="https://github.com/user-attachments/assets/9aa5e942-cf7a-4fda-b119-c33a3b4313f0" />
+<img width="728" height="357" alt="image" src="https://github.com/user-attachments/assets/9aa5e942-cf7a-4fda-b119-c33a3b4313f0" /><br>
+Source: https://www.isroset.org/pub_paper/WAJES/4-ISROSET-WAJES-10615.pdf
 
 In particular Eppler was a pioneer in using computer programs to explore and design airfoils. He called it using a "digtial windtunnel." This is your chance to dig into that work.
 
