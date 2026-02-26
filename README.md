@@ -45,6 +45,11 @@ This is basically the same type of panel as Figure 7 in the TM80210 report, whic
 
 Also it is the same type of figure that we find in the book on airfoils. So it seems that in terms of historical reconstruction we are getting somewhere.<br><br>
 
+In the interest of completeness I have uploade a user manual for the Eppler program that hails from the 1970's. It even makes reference to a punch card for input. It may be instructive to take a look at it in order to undertand where the formatting of the program's data is coming from:
+
+<img width="701" height="414" alt="image" src="https://github.com/user-attachments/assets/2c9d681c-5be5-4609-8fb7-0bb8e487f77e" />
+
+
 <img width="1100" height="619" alt="image" src="https://github.com/user-attachments/assets/8b84793f-d5c5-4b72-92e9-803fbbbc076a" />
 <i>Sailplanes were among Eppler's (on the right) specialities. Here is his obituary from a German aviation magazine, where the picture is taken from:
 https://www.aerokurier.de/aerodynamik-legende-richard-eppler-verstorben/</i>
