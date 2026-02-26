@@ -33,7 +33,7 @@ PROGRAM Profile
 !   this particular source code is not his compressibility update.
 ```
 
-<br>A scientific report about the software is enclosed as pdf. In the report you find the original code and some illustrations.<br>
+<br>A scientific report from NASA (TM80210) about the software is enclosed as pdf. In the report you find the original code and some illustrations.<br>
 
 The Eppler program outputs a file called profile.out. I have added a Python script called plot_data.py that displays a wing profile and a velcocity distribution based on this, saving the result as combined_panel.png. Below you see the panel plotted after using the e1098 data as input:
 
