@@ -49,7 +49,7 @@ In the interest of completeness I have uploade a user manual for the Eppler prog
 
 <img width="701" height="414" alt="image" src="https://github.com/user-attachments/assets/2c9d681c-5be5-4609-8fb7-0bb8e487f77e" />
 
-So we understand that the work of Eppler spanned several epochs in the development of both computers and aviation.
+So we understand that the work of Eppler spanned several epochs in the development of both computers and aviation.<br>
 
 <img width="1100" height="619" alt="image" src="https://github.com/user-attachments/assets/8b84793f-d5c5-4b72-92e9-803fbbbc076a" />
 <i>Sailplanes were among Eppler's (on the right) specialities. Here is his obituary from a German aviation magazine, where the picture is taken from:
