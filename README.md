@@ -3,7 +3,7 @@
 # digitalWindtunnel
 This project is about resurrecting the "digital windtunnel" of Richard Eppler (1924-2021.) 
 
-Why should I care, you ask?
+Why is that important?
 
 Well, if you are interested in airplanes and their design the name Eppler keeps coming up. Not the least Eppler has given name to a whole series of airfoils that remain relevant, typically indicated by "E" and som number.
 
