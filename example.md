@@ -180,3 +180,19 @@ ENDE
 | `naca2412.dat` | 12.00% | 2.15 | Coordinate-input path (`FXPR`), thinner and lower zero-lift angle |
 
 At the same listed angles (2/8/10/12 deg relative to zero-lift line), the NACA 2412 case shows lower peak `V/U∞` at 2 deg but higher peaks at 8-12 deg in this setup, with the largest difference at 12 deg.
+
+### Real-aircraft usage examples for NACA 2412
+
+From the aircraft/airfoil lookup list at UIUC/Lednicer, NACA 2412 appears on multiple aircraft, including:
+
+- Cessna C-145 Airmaster
+- Cessna C-165 Airmaster
+- Cessna C-34
+- Ikarus C42
+
+Example photo (Ikarus C42, Wikimedia Commons):
+
+[![Ikarus C42](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/18-01-16-Ikarus-C42-RalfR_RR80486.jpg/1280px-18-01-16-Ikarus-C42-RalfR_RR80486.jpg)](https://commons.wikimedia.org/wiki/Category:Ikarus_C42)
+
+Reference list:
+https://m-selig.ae.illinois.edu/ads/aircraft.html
