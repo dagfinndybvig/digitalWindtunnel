@@ -37,6 +37,8 @@ PROGRAM Profile
 
 The Eppler program outputs a file called profile.out. I have added a Python script called plot_data.py that displays a wing profile and a velcocity distribution based on this, saving the result as combined_panel.png. Below you see the panel plotted after using the e1098 data as input:
 
+If you want a complete worked walkthrough (baseline plus thicker/thinner variants, input decks, plots, and interpretation), see [example.md](example.md).
+
 <img width="2400" height="1800" alt="combined_panel" src="https://github.com/user-attachments/assets/9b13305c-8789-439b-96dc-2c722b56d19f" />
 
 This is basically the same type of panel as Figure 7 in the TM80210 report, which is incidentially based on airfoil e1097.
