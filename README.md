@@ -16,7 +16,7 @@ The program constituting the digital windtunnel is discussed in Eppler's readily
 
 Here you find a version of the program, only known as the Eppler program.
 
-It was written in ancient Fortran but has been modernized to run on current Linux and Windows. Consult the legacy readme.txt for the the back story.
+It was written in ancient Fortran but has been modernized to run on current Linux and Windows. Consult the legacy [readme](docs/readme.txt) for the back story.
 
 Also there are some interesting historical comments in the code itself. Especially this:<br>
 
@@ -35,11 +35,11 @@ PROGRAM Profile
 
 <br>A scientific report from NASA (TM80210) about the software is enclosed as pdf. In the report you find the original code and some illustrations.<br>
 
-The Eppler program outputs a file called profile.out. I have added a Python script called plot_data.py that displays a wing profile and a velcocity distribution based on this, saving the result as combined_panel.png. Below you see the panel plotted after using the e1098 data as input:
+The Eppler program outputs a file called `profile.out` in the current working directory. I have added a Python script called `src/plot_data.py` that displays a wing profile and a velocity distribution based on this, saving the result as `combined_panel.png` (or a custom output file). Below you see the panel plotted after using the E1098 data as input:
 
-If you want a complete worked walkthrough (baseline plus thicker/thinner variants, input decks, plots, and interpretation), see [example.md](example.md).
+If you want a complete worked walkthrough (baseline plus thicker/thinner variants, input decks, plots, and interpretation), see [docs/example.md](docs/example.md).
 
-<img width="2400" height="1800" alt="e1098 panel" src="e1098.png" />
+<img width="2400" height="1800" alt="e1098 panel" src="assets/images/e1098.png" />
 
 This is basically the same type of panel as Figure 7 in the TM80210 report, which is incidentially based on airfoil e1097.
 
@@ -75,8 +75,8 @@ https://www.aerokurier.de/aerodynamik-legende-richard-eppler-verstorben/</i>
 
 Pre-built binaries are included in the repository:
 
-- `profile` — Ubuntu/Linux (x86_64), statically linked — no runtime dependencies
-- `profile.exe` — Windows (x86_64), statically linked — no runtime dependencies, runs on any modern Windows machine
+- `bin/profile` — Ubuntu/Linux (x86_64), statically linked — no runtime dependencies
+- `bin/profile.exe` — Windows (x86_64), statically linked — no runtime dependencies, runs on any modern Windows machine
 
 These are provided for convenience and may be used at your own responsibility.
 
@@ -98,8 +98,8 @@ sudo pacman -S gcc-fortran
 ```
 
 ```bash
-gfortran profile.f90 -o profile -static
-./profile
+gfortran src/profile.f90 -o bin/profile -static
+./bin/profile
 ```
 Something similar should be possible on Mac, since it shares the Unix heritage.
 
@@ -124,7 +124,7 @@ Add `C:\msys64\ucrt64\bin` to your Windows PATH.
 ### Compile
 
 ```powershell
-gfortran profile.f90 -o profile.exe -static
+gfortran src/profile.f90 -o bin/profile.exe -static
 ```
 
 Compilation produces many warnings about legacy Fortran syntax (arithmetic IF statements, non-standard DO termination). These are expected for code of this vintage and do not affect correctness.
@@ -132,10 +132,10 @@ Compilation produces many warnings about legacy Fortran syntax (arithmetic IF st
 ### Run
 
 ```powershell
-.\profile.exe
+.\bin\profile.exe
 ```
 
-The program prompts for an input file name. Enter e.g. `e1098.dat` to run the included sample case. Output is written to `profile.out`.
+The program prompts for an input file name. Enter e.g. `data\input\e1098.dat` to run the included sample case. Output is written to `profile.out` in your current working directory.
 
 ### Bug fix
 

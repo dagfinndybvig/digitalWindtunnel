@@ -1,0 +1,31 @@
+ Data:TRA1  1098 2350  800 2750 1000  000 1200 6000  200
+ TRA1:1098        
+ Data:TRA2  1098  400 1450  200 1000  650  400 1450  200 1000  650  600  400  000  000
+ Entering Tranpo, jab=           4
+ Trapro iteration   6.30313307E-02   8.99999949E+09   7.00000000    
+ Trapro iteration  -1.29382312E-03   6.30313307E-02   6.01479530    
+ Trapro iteration   5.22285700E-06  -1.29382312E-03   6.03415012    
+ Trapro iteration  -2.98023224E-08   5.22285700E-06   6.03407192    
+ Trapro iteration   2.98023224E-08  -2.98023224E-08   6.03407240    
+ Trapro iteration  -2.98023224E-08  -2.98023224E-08   6.03407192    
+ Trapro iteration   6.30313307E-02   8.99999949E+09   7.00000000    
+ Trapro iteration  -1.29382312E-03   6.30313307E-02   6.01479530    
+ Trapro iteration   5.22285700E-06  -1.29382312E-03   6.03415012    
+ Trapro iteration  -2.98023224E-08   5.22285700E-06   6.03407192    
+ Trapro iteration   2.98023224E-08  -2.98023224E-08   6.03407240    
+ Trapro iteration  -2.98023224E-08  -2.98023224E-08   6.03407192    
+ Trapro iteration   6.30313307E-02   8.99999949E+09   7.00000000    
+ Trapro iteration  -1.29382312E-03   6.30313307E-02   6.01479530    
+ Trapro iteration   5.22285700E-06  -1.29382312E-03   6.03415012    
+ Trapro iteration  -2.98023224E-08   5.22285700E-06   6.03407192    
+ Trapro iteration   2.98023224E-08  -2.98023224E-08   6.03407240    
+ Trapro iteration  -2.98023224E-08  -2.98023224E-08   6.03407192    
+ Trapro iteration   6.30313307E-02   8.99999949E+09   7.00000000    
+ Trapro iteration  -1.29382312E-03   6.30313307E-02   6.01479530    
+ Trapro iteration   5.22285700E-06  -1.29382312E-03   6.03415012    
+ Trapro iteration  -2.98023224E-08   5.22285700E-06   6.03407192    
+ Trapro iteration   2.98023224E-08  -2.98023224E-08   6.03407240    
+ Trapro iteration  -2.98023224E-08  -2.98023224E-08   6.03407192    
+ Data:ALFA     4  200  800 1000 1200
+ Data:RE  121   03    100003    3000
+ Data:ENDE

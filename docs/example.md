@@ -2,6 +2,13 @@
 
 This document explains (1) how the fixed-format input decks are written/generated, (2) how `profile` processes them, and (3) how the PNG panels are produced from `profile.out`.
 
+Repository locations after cleanup:
+
+- Input decks: `data/input/*.dat`
+- Solver outputs: `data/output/*`
+- Plot script: `src/plot_data.py`
+- Images: `assets/images/*.png`
+
 ## 1) Input deck format (fixed columns, Fortran internal READ)
 
 `profile.f90` reads each record as `CHARACTER*80` and parses by column slices:
@@ -62,15 +69,15 @@ The three generated images included in this repo are:
 
 ## Baseline (`e1098.dat`)
 
-![e1098 baseline](e1098.png)
+![e1098 baseline](../assets/images/e1098.png)
 
 ## Thicker variant (`e1098a.dat`)
 
-![e1098 thicker](e1098a.png)
+![e1098 thicker](../assets/images/e1098a.png)
 
 ## Thinner variant (`e1098b.dat`)
 
-![e1098 thinner](e1098b.png)
+![e1098 thinner](../assets/images/e1098b.png)
 
 ## 5) Input decks reproduced exactly
 
@@ -144,7 +151,7 @@ To test a non-Eppler profile, a `naca2412.dat` case was generated using the prog
 
 ### NACA image
 
-![naca2412](naca2412.png)
+![naca2412](../assets/images/naca2412.png)
 
 ### `naca2412.dat` deck
 
