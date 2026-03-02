@@ -39,7 +39,7 @@ The Eppler program outputs a file called profile.out. I have added a Python scri
 
 If you want a complete worked walkthrough (baseline plus thicker/thinner variants, input decks, plots, and interpretation), see [example.md](example.md).
 
-<img width="2400" height="1800" alt="combined_panel" src="https://github.com/user-attachments/assets/9b13305c-8789-439b-96dc-2c722b56d19f" />
+<img width="2400" height="1800" alt="e1098 panel" src="e1098.png" />
 
 This is basically the same type of panel as Figure 7 in the TM80210 report, which is incidentially based on airfoil e1097.
 
