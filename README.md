@@ -43,6 +43,9 @@ If you want a complete worked walkthrough (baseline plus thicker/thinner variant
 
 This is basically the same type of panel as Figure 7 in the TM80210 report, which is incidentially based on airfoil e1097.
 
+In the output you will also see `ALPHA0`, which is the **zero-lift angle of attack** for the analyzed airfoil in this model setup.  
+This is important because it is the reference shift between geometric angle and aerodynamic loading: it helps interpret where lift starts to build, compare airfoil variants, and read angle-dependent performance tables consistently.
+
 <img width="537" height="558" alt="image" src="https://github.com/user-attachments/assets/d12b38bf-6944-40fd-ab79-27c775a8328a" />
 
 Also it is the same type of figure that we find in the book on airfoils. So it seems that in terms of historical reconstruction we are getting somewhere.<br><br>
