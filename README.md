@@ -47,7 +47,7 @@ In the output you will also see `ALPHA0`, which is the **zero-lift angle of atta
 
 <img width="537" height="558" alt="image" src="https://github.com/user-attachments/assets/d12b38bf-6944-40fd-ab79-27c775a8328a" />
 
-Also it is the same type of figure that we find in the book on airfoils. So it seems that in terms of historical reconstruction we are getting somewhere.<br><br>
+Also it is the same type of figure that we find in the book on airfoils. So it seems that in terms of historical reconstruction we are getting somewhere.<br>
 
 In the interest of completeness I have uploade a user manual for the Eppler program that hails from the 1970's. It even makes reference to decks of punch cards for input. It may be instructive to take a look at it in order to undertand where the formatting of the program's data is coming from:
 
