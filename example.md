@@ -111,11 +111,10 @@ From `profile.out`:
 
 This gives the expected directional behavior: the thicker case increases thickness/ETA and slightly shifts moment and zero-lift angle; the thinner case shifts in the opposite direction.
 
-## 7) Interpreting take-off angle correctly
+## 7) What `ALPHA0` means and why it matters
 
-It is **not** correct to conclude from this table alone that the thickest airfoil needs the steepest take-off angle.
+`ALPHA0` is the **zero-lift angle of attack** reported by the solver for the analyzed airfoil/setup.
 
-- `ALPHA0` here is the zero-lift reference parameter reported by the solver, not a direct aircraft take-off pitch requirement.
-- Required take-off angle depends on the lift needed at rotation (`W/S`), speed, flap configuration, Reynolds number, and especially the `CL`-versus-`alpha` behavior (including `CLmax`), not on `ALPHA0` alone.
-
-So the proper comparison for "which one needs more angle at take-off" is to evaluate all three decks at identical operating assumptions and compare `CL(alpha)` (or target-`CL` angle) from the same analysis setup.
+- It is the aerodynamic reference angle where net lift is approximately zero in this model.
+- It helps translate between geometric angle and aerodynamic loading when reading the velocity/pressure and polar outputs.
+- It is useful for comparing variants, because shifts in `ALPHA0` indicate that the lift curve has moved relative to geometric angle.
