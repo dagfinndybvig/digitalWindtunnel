@@ -23,10 +23,10 @@ Because parsing is fixed-column, spacing must preserve exact field boundaries.
 
 We kept `TRA1`, `ALFA`, and `RE` identical and only changed **two `TRA2` `F5.2` fields** that were both `1450` in the baseline deck:
 
-- **Thicker deck (`e1098a.dat`)**: `1450 -> 1305` (both occurrences).
-- **Thinner deck (`e1098b.dat`)**: `1450 -> 1595` (both occurrences).
+- **Thicker deck (`e1098a.dat`)**: `1450 -> 1851` (both occurrences), targeting `+3` percentage points thickness.
+- **Thinner deck (`e1098b.dat`)**: `1450 -> 0956` (both occurrences), targeting `-3` percentage points thickness.
 
-Those values are in `TRA2` fixed-width numeric payload (columns 11-80), so they are interpreted as `13.05` and `15.95`.
+Those values are in `TRA2` fixed-width numeric payload (columns 11-80), so they are interpreted as `18.51` and `9.56`.
 
 ## 3) How the program processes these decks
 
@@ -83,7 +83,7 @@ ENDE
 
 ```text
 TRA1  1098 2350  800 2750 1000  000 1200 6000  200
-TRA2  1098  400 1305  200 1000  650  400 1305  200 1000  650  600  400    0    0
+TRA2  1098  400 1851  200 1000  650  400 1851  200 1000  650  600  400    0    0
 ALFA     4  200  800 1000 1200
 RE  121   03    100003    3000
 ENDE
@@ -93,7 +93,7 @@ ENDE
 
 ```text
 TRA1  1098 2350  800 2750 1000  000 1200 6000  200
-TRA2  1098  400 1595  200 1000  650  400 1595  200 1000  650  600  400    0    0
+TRA2  1098  400  956  200 1000  650  400  956  200 1000  650  600  400    0    0
 ALFA     4  200  800 1000 1200
 RE  121   03    100003    3000
 ENDE
@@ -106,7 +106,7 @@ From `profile.out`:
 | Deck | Thickness | ALPHA0 | CM0 | ETA |
 |---|---:|---:|---:|---:|
 | `e1098.dat` | 18.97% | 4.90 | -0.1237 | 1.137 |
-| `e1098a.dat` (thicker) | 19.96% | 4.97 | -0.1257 | 1.147 |
-| `e1098b.dat` (thinner) | 17.98% | 4.84 | -0.1219 | 1.129 |
+| `e1098a.dat` (thicker) | 21.97% | 5.13 | -0.1311 | 1.171 |
+| `e1098b.dat` (thinner) | 15.96% | 4.74 | -0.1190 | 1.116 |
 
 This gives the expected directional behavior: the thicker case increases thickness/ETA and slightly shifts moment and zero-lift angle; the thinner case shifts in the opposite direction.
