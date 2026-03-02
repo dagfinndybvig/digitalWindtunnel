@@ -1,1 +1,5 @@
 *.out
+profile.log
+profile.fig
+data/output/*
+!data/output/.gitkeep
