@@ -40,6 +40,11 @@ Main flow for these examples:
 
 The thickness line in `profile.out` (`AIRFOIL 1098 ... % THICKNESS`) reflects the modified solution for each deck.
 
+Important: this project uses two different input modes:
+
+- **Design-card mode** (`TRA1`/`TRA2`): used for `e1098.dat`, `e1098a.dat`, `e1098b.dat`, and `e1097.dat`.
+- **Coordinate-analysis mode** (`FXPR`): used for `naca2412.dat`, where the geometry is supplied explicitly as `x,y` points.
+
 ## 4) How the images are plotted
 
 `plot_data.py` does:
