@@ -77,12 +77,15 @@ def parse_profile_out(filename='profile.out'):
     return np.array(x), np.array(y), velocities, angle_values, airfoil_name
 
 
-def plot_combined(x, y, velocities, angles, airfoil_name, output_file='combined_panel.png'):
+def plot_combined(x, y, velocities, angles, airfoil_name, output_file='combined_panel.png', variant_label=None):
     """Create a combined plot with airfoil profile and velocity distributions."""
     fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(10, 12))
     
     # Add overall title with airfoil name
-    fig.suptitle(f'Eppler Airfoil Analysis: {airfoil_name}', fontsize=16, fontweight='bold', y=0.98)
+    title = f'Eppler Airfoil Analysis: {airfoil_name}'
+    if variant_label:
+        title += f' ({variant_label})'
+    fig.suptitle(title, fontsize=16, fontweight='bold', y=0.98)
     
     # --- Top plot: Velocity distribution ---
     colors = plt.cm.viridis(np.linspace(0, 1, len(angles)))
@@ -161,10 +164,12 @@ def main():
         filename = sys.argv[1]
     else:
         filename = 'profile.out'
+    variant_label = sys.argv[2] if len(sys.argv) > 2 else None
+    output_file = sys.argv[3] if len(sys.argv) > 3 else 'combined_panel.png'
     
     try:
         x, y, velocities, angles, airfoil_name = parse_profile_out(filename)
-        plot_combined(x, y, velocities, angles, airfoil_name)
+        plot_combined(x, y, velocities, angles, airfoil_name, output_file=output_file, variant_label=variant_label)
     except FileNotFoundError:
         print(f"Error: Could not find {filename}")
         print("Run the profile program first: ./profile < input.dat")
