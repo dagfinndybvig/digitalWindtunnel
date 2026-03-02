@@ -118,3 +118,60 @@ This gives the expected directional behavior: the thicker case increases thickne
 - It is the aerodynamic reference angle where net lift is approximately zero in this model.
 - It helps translate between geometric angle and aerodynamic loading when reading the velocity/pressure and polar outputs.
 - It is useful for comparing variants, because shifts in `ALPHA0` indicate that the lift curve has moved relative to geometric angle.
+
+## 8) Additional case: NACA 2412
+
+To test a non-Eppler profile, a `naca2412.dat` case was generated using the program's `FXPR` path (explicit coordinate input), not `TRA1`/`TRA2` design cards.
+
+### How `naca2412.dat` was generated
+
+1. Compute NACA 2412 coordinates from the standard 4-digit definition:
+   - camber `m=0.02`, camber position `p=0.4`, thickness `t=0.12`.
+2. Build cosine-spaced points (`31` per surface).
+3. Write an `FXPR` deck in the format expected by this code version:
+   - `FXPR...` control line,
+   - airfoil ID line (`NACA2412`),
+   - `MUP MLOW`,
+   - upper/lower `x,y` blocks in `8F10.5`,
+   - `ALFA` line, then `ENDE`.
+
+`RE` was intentionally omitted for this case, because adding it caused a floating-point exception in this executable for the NACA/FXPR path.
+
+### NACA image
+
+![naca2412](naca2412.png)
+
+### `naca2412.dat` deck
+
+```text
+FXPR11001
+NACA2412
+   31   31
+   0.00000   0.00147   0.00600   0.01353   0.02394   0.03707   0.05273   0.07070
+   0.09073   0.11254   0.13582   0.16026   0.18552   0.21128   0.23720   0.26296
+   0.28825   0.31275   0.33617   0.35823   0.37864   0.39715   0.41352   0.42752
+   0.43891   0.44741   0.45276   0.45467   0.45288   0.44718   0.43744
+   0.00000   0.00940   0.01871   0.02781   0.03657   0.04483   0.05240   0.05908
+   0.06466   0.06895   0.07177   0.07296   0.07241   0.07005   0.06585   0.05983
+   0.05205   0.04264   0.03177   0.01967   0.00662  -0.00710  -0.02116  -0.03518
+  -0.04872  -0.06128  -0.07230  -0.08114  -0.08716  -0.08972  -0.08888
+   0.00000   0.00949   0.02788   0.04525   0.06163   0.07708   0.09167   0.10551
+   0.11871   0.13136   0.14351   0.15515   0.16628   0.17685   0.18680   0.19604
+   0.20444   0.21189   0.21828   0.22353   0.22756   0.23031   0.23174   0.23180
+   0.23049   0.22778   0.22369   0.21825   0.21149   0.20349   0.19435
+   0.00000  -0.00524  -0.01059  -0.01600  -0.02139  -0.02667  -0.03174  -0.03650
+  -0.04083  -0.04464  -0.04784  -0.05035  -0.05211  -0.05306  -0.05317  -0.05240
+  -0.05075  -0.04823  -0.04486  -0.04068  -0.03578  -0.03026  -0.02424  -0.01786
+  -0.01125  -0.00460   0.00189   0.00800   0.01346   0.01800   0.02126
+ALFA     4  200  800 1000 1200
+ENDE
+```
+
+### Comparison with `e1098.dat`
+
+| Deck | Thickness | ALPHA0 | Notes |
+|---|---:|---:|---|
+| `e1098.dat` | 18.97% | 4.90 | Eppler design-card path (`TRA1/TRA2`) with boundary-layer `RE` card |
+| `naca2412.dat` | 12.00% | 2.15 | Coordinate-input path (`FXPR`), thinner and lower zero-lift angle |
+
+At the same listed angles (2/8/10/12 deg relative to zero-lift line), the NACA 2412 case shows lower peak `V/U∞` at 2 deg but higher peaks at 8-12 deg in this setup, with the largest difference at 12 deg.
