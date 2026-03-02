@@ -203,3 +203,31 @@ Example photo (Ikarus C42, Wikimedia Commons):
 
 Reference list:
 https://m-selig.ae.illinois.edu/ads/aircraft.html
+
+## 9) Reconstructed Somers S814 worked example (Eppler usage path)
+
+The Somers report (`docs/Somers.pdf`) states that the **Eppler Code** was used for this work and cites **Eppler's Airfoil Program System (User's Guide, c.1991)**.  
+It also references prior Eppler–Somers work, so this article is explicitly grounded in that Eppler software lineage, but it does not publish a full reproducible command deck.  
+To fill that gap, this repo now includes a practical reconstruction that follows the same analysis route in this codebase:
+
+1. Use published S814 geometry coordinates (from a public mirror of NREL S814 coordinates).
+2. Convert them to this program's `FXPR` coordinate-input format (`8F10.5` blocks):
+   - upper surface `x`/`y` from **LE -> TE**,
+   - lower surface `x`/`y` from **LE -> TE**,
+   - then `ALFA ...` and `ENDE`.
+3. Run `bin/profile.exe` on `data/input/s814.dat`.
+4. Plot `data/output/profile.out` with `src/plot_data.py`.
+
+Generated artifacts:
+
+- Deck: `data/input/s814.dat`
+- Plot: `assets/images/s814.png`
+
+![s814 reconstructed](../assets/images/s814.png)
+
+Observed output highlights from this reconstruction:
+
+- `AIRFOIL S814 24.02% THICKNESS`
+- `ALPHA0 = 4.42 DEG`
+
+Important limitation: this is a **reconstructed analysis workflow** (geometry-analysis mode, `FXPR`), not the original unpublished internal design-card sequence used by Somers during inverse design.
