@@ -208,6 +208,7 @@ https://m-selig.ae.illinois.edu/ads/aircraft.html
 
 The Somers report (`docs/Somers.pdf`) states that the **Eppler Code** was used for this work and cites **Eppler's Airfoil Program System (User's Guide, c.1991)**.  
 It also references prior Eppler–Somers work, so this article is explicitly grounded in that Eppler software lineage, but it does not publish a full reproducible command deck.  
+In the report, S814 is intended for the **root portion of a horizontal-axis wind-turbine blade**, specifically around the **0.40 blade radial station** (with companion S815 for the 0.30 station).
 To fill that gap, this repo now includes a practical reconstruction that follows the same analysis route in this codebase:
 
 1. Use published S814 geometry coordinates (from a public mirror of NREL S814 coordinates).
