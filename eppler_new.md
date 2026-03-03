@@ -106,3 +106,39 @@ At this point, the evidence suggests:
 1. The instability is mostly tied to **reconstructed Appendix TRA decks** (likely OCR noise + version/implementation mismatch), not simply the presence/absence of Reynolds input.
 2. **FXPR coordinate-analysis mode** is robust for extant coordinate tables in this repo.
 3. **TRA design mode can work well** when the source deck is a clean, explicit chapter example (e.g., airfoil 992), so the TRA pathway itself is not universally broken.
+
+## Chapter 3 verification case from the big red book: airfoil 993 (design mode)
+
+To verify that design mode still works when source input is clean, we ran **airfoil 993** from **Chapter 3** of the big red Eppler book (the section immediately following the 992 case).
+
+### Free-format deck (book-style)
+
+File: `data/input/eppler993.free`
+
+```text
+TRAI 993 15 0 27.5 2.56 0 3 32.5 -3 45 -2.56 60 0
+TRA2 993 4 15 2 -.4 .645 4 15 2 -.4 .645 9 0 0
+ALFA 4 2 8 10 12
+ENDE
+```
+
+### Converted fixed-format deck (for this repository parser)
+
+File: `data/input/eppler993.dat`
+
+```text
+TRA1   993 1500    0 2750  256    0  300 3250 -300 4500 -256 6000    0
+TRA2   993  400 1500  200 -400  645  400 1500  200 -400  645  900    0    0
+ALFA000  4  200  800 1000 1200
+ENDE
+```
+
+### Observed run outcome
+
+- `profile.exe` terminated normally.
+- `eppler993.out` shows `ITERATION 0 ... MODE 9` and convergence to `ITERATION 5`.
+- Final values match the book example closely (`THICKNESS 18.04%`, `ALPHA0 ~ 0.00`, `ETA ~ 1.133`).
+
+Graph:
+
+![eppler993 design mode](assets/images/eppler993.png)
