@@ -1,8 +1,6 @@
-# Notes on `epplerbook.pdf` and input-format differences
+# Notes on Eppler's later work and input-format differences
 
-## What the book is about (quick skim)
-
-`epplerbook.pdf` is a broad technical treatment of Eppler's airfoil method, not just a manual:
+The big book on design and analysis is a broad technical treatment of Eppler's airfoil method, not just a manual:
 
 - **Theory and numerics** of potential-flow analysis/design (Ch. 2-3), boundary-layer modeling (Ch. 4), and design-parameter selection (Ch. 5).
 - **Large applied catalog** of airfoils (Ch. 6), grouped by use case (low Reynolds, gliders, tailless, propellers, hydrofoils, etc.).
