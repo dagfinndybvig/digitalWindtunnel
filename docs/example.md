@@ -232,3 +232,33 @@ Observed output highlights from this reconstruction:
 - `ALPHA0 = 4.42 DEG`
 
 Important limitation: this is a **reconstructed analysis workflow** (geometry-analysis mode, `FXPR`), not the original unpublished internal design-card sequence used by Somers during inverse design.
+
+## 10) E864: experience report (free-input conversion vs `FXPR` fallback)
+
+For airfoil **E864**, we tried the full "new book style" path first: take free-format `TRA1/TRA2` lines from Appendix III, convert to fixed-format cards, and run `bin/profile.exe`.
+
+What happened:
+
+1. The converted `TRA` path was **not robust** in this executable:
+   - one variant ran into effectively non-terminating iteration output,
+   - another variant produced a segmentation fault.
+2. Because of this, no reliable `profile.out` was produced from the `TRA` route for plotting.
+
+Fallback that worked:
+
+1. Extract E864 coordinates from the book table (the same table listing E862/E863/E864).
+2. Build an `FXPR` deck (`data/input/e864_fxpr.dat`) using upper/lower coordinate blocks (`8F10.5` style).
+3. Run `bin/profile.exe` on that deck and plot with `src/plot_data.py`.
+
+Generated artifacts:
+
+- Attempted free/deck files: `data/input/e864.free`, `data/input/e864.dat`
+- Working fallback deck: `data/input/e864_fxpr.dat`
+- Output: `data/output/e864_fxpr.out`
+- Plot: `assets/images/e864.png`
+
+Observed result:
+
+- Plot-derived thickness is about **38.83%**, close to the book's E864 designation (~38.9%).
+- OCR cleanup was required when extracting numbers from the scanned PDF text.
+- `FXPR` gave a practical, reproducible run in this repo even when the converted `TRA` path did not.
