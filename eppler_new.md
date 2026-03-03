@@ -89,3 +89,20 @@ Artifacts from that successful route:
 - `assets/images/e864.png`
 
 Observed result: plot-derived thickness is about **38.83%**, close to the book's E864 label (~38.9%), after OCR cleanup of extracted numbers.
+
+## Latest practical findings (TRA vs FXPR)
+
+After the E864 run, we continued with several additional tests to understand reliability:
+
+- **A/B check on Reynolds input for E864 TRA path**: adding a standard `RE` card did **not** change the failure mode; both with and without `RE` ended in the same segfault.
+- **E540 TRA attempt**: converted TRA deck ran into non-terminating iteration output (similar instability pattern as problematic E864 TRA variants).
+- **E541 FXPR (from Appendix coordinate table)**: ran cleanly and produced usable output/plot (`e541_fxpr.out`, `e541.png`).
+- **E992 clean chapter example in design mode (TRA)**: ran successfully, converged in iteration mode 9, and produced a valid plot (`eppler992.png`).
+
+### Interpretation
+
+At this point, the evidence suggests:
+
+1. The instability is mostly tied to **reconstructed Appendix TRA decks** (likely OCR noise + version/implementation mismatch), not simply the presence/absence of Reynolds input.
+2. **FXPR coordinate-analysis mode** is robust for extant coordinate tables in this repo.
+3. **TRA design mode can work well** when the source deck is a clean, explicit chapter example (e.g., airfoil 992), so the TRA pathway itself is not universally broken.

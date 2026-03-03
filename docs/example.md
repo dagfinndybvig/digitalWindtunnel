@@ -262,3 +262,48 @@ Observed result:
 - Plot-derived thickness is about **38.83%**, close to the book's E864 designation (~38.9%).
 - OCR cleanup was required when extracting numbers from the scanned PDF text.
 - `FXPR` gave a practical, reproducible run in this repo even when the converted `TRA` path did not.
+
+## 11) Clean design-mode example from the book: airfoil 992 (`TRA1`/`TRA2`)
+
+To demonstrate a **working design-mode** (`TRA`) workflow from book-style input, we used the Chapter 3-style airfoil 992 example.
+
+### Free-format deck (book-style)
+
+File: `data/input/eppler992.free`
+
+```text
+TRAI 992 15 0 0 2.56 45 -2.56 60 0
+TRA2 992 4 15 2 -.4 .645 4 15 2 -.4 .645 9 0 0
+ALFA 4 2 8 10 12
+ENDE
+```
+
+### Converted fixed-format deck (for this repo's parser)
+
+File: `data/input/eppler992.dat`
+
+```text
+TRA1   992 1500    0    0  256 4500 -256 6000    0
+TRA2   992  400 1500  200 -400  645  400 1500  200 -400  645  900    0    0
+ALFA000  4  200  800 1000 1200
+ENDE
+```
+
+### Run + output + plot
+
+1. Convert free -> fixed using `src/free_to_fixed.py`.
+2. Run `bin/profile.exe` with `data/input/eppler992.dat`.
+3. Plot `data/output/eppler992.out` using `src/plot_data.py`.
+
+Generated artifacts:
+
+- Output: `data/output/eppler992.out`
+- Plot: `assets/images/eppler992.png`
+
+Observed highlights from `eppler992.out`:
+
+- Trailing-edge iteration in **mode 9** converged (iterations 1-3 shown).
+- `AIRFOIL 992 17.53% THICKNESS`
+- `ALPHA0 = -0.00 DEG`
+
+![eppler992 design mode](../assets/images/eppler992.png)
