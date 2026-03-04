@@ -30,7 +30,6 @@ Generated airfoil sections are stored in:
 - MeshLab
 - Microsoft 3D Viewer
 
-<br>
 <img width="588" height="277" alt="image" src="https://github.com/user-attachments/assets/8a23a4d7-c092-4778-b935-e6c8ad9b8418" />
 <br><i>The naca2412 airfoil seen in Paint 3D</i><br>
 
