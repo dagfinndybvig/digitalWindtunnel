@@ -23,7 +23,7 @@ Generated airfoil sections are stored in:
 - `data\output\e993_section.stl`
 - `data\output\naca2412_section.stl`
 
-
+  <br>
   <img width="588" height="277" alt="image" src="https://github.com/user-attachments/assets/8a23a4d7-c092-4778-b935-e6c8ad9b8418" />
   <br><i>The naca2412 airfoil seen in Paint 3D</i><br>
 
