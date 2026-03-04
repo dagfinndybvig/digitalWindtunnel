@@ -59,7 +59,7 @@ So we understand that the work of Eppler spanned several epochs in the developme
 <i>Sailplanes were among Eppler's (on the right) specialities. Here is his obituary from a German aviation magazine, where the picture is taken from:
 https://www.aerokurier.de/aerodynamik-legende-richard-eppler-verstorben/</i>
 
-<br>Maybe you think the aerodynamics of gliders and other low speed aircrafts is irrelevant in an age of supersonic fighters? Think again! It forms the basis of unmanned aerial vehicls (UAV), otherwise known as drones, especially the long range ones that can carry relatively heavy weapons.<br>
+<br>Maybe you think the aerodynamics of gliders and other low speed aircrafts is irrelevant in an age of supersonic fighters? Think again! It forms the basis of unmanned aerial vehicls (UAV), otherwise known as drones, especially the long range ones.<br>
 
 <img width="2588" height="1120" alt="image" src="https://github.com/user-attachments/assets/3529caab-5704-446b-957c-0d4825230b76" /><br>
 
