@@ -25,7 +25,7 @@ Generated airfoil sections are stored in:
 
 
   <img width="588" height="277" alt="image" src="https://github.com/user-attachments/assets/8a23a4d7-c092-4778-b935-e6c8ad9b8418" />
-  <b>naca2412</b><br>
+  <b>naca2412 seen in Paint 3D</b><br>
 
 
 ## Programs you can use to view STL files
