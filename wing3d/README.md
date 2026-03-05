@@ -106,6 +106,10 @@ Wrote swept_wing.stl  (2682 triangles)
 
 The resulting file `swept_wing.stl` is included in this folder as a ready-to-use reference model.
 
+<img width="537" height="624" alt="image" src="https://github.com/user-attachments/assets/7d440d3c-0f0e-4826-a6ab-acbb63f77bbd" /><br>
+<i>As wieved in Paint 3D</i>
+
+
 ### Different root and tip airfoils(shape interpolation)
 ```bash
 # Run the Eppler program twice to get two profile.out files
