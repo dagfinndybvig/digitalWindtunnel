@@ -139,11 +139,12 @@ Building wing 'wing_1098_to_1097':
 
 Wrote blended_wing.stl  (2638 triangles)
 ```
+<img width="392" height="468" alt="image" src="https://github.com/user-attachments/assets/adc7f38e-4325-4911-b240-165a13754e43" /><br>
 
-E1098 at the root blends smoothly into E1097 at the tip — both Eppler designs
+<i>E1098 at the root blends smoothly into E1097 at the tip — both Eppler designs
 from the NASA TM80210 report, with slightly different section geometries.
 The resulting file `blended_wing.stl` is included in this folder as a
-ready-to-use reference model.
+ready-to-use reference model.</i>
 
 ### High-resolution model for rendering
 ```bash
