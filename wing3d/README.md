@@ -110,16 +110,40 @@ The resulting file `swept_wing.stl` is included in this folder as a ready-to-use
 <i>Complete wing viewed in Paint 3D</i><br>
 
 
-### Different root and tip airfoils(shape interpolation)
+### Different root and tip airfoils (shape interpolation)
 ```bash
 # Run the Eppler program twice to get two profile.out files
 .\bin\profile.exe   # enter data\input\e1098.dat  → save as root.out
-.\bin\profile.exe   # enter data\input\e864.dat   → save as tip.out
+.\bin\profile.exe   # enter data\input\e1097.dat  → save as tip.out
 
 python wing_to_stl.py root.out tip.out \
     --span-mm 350 --root-chord-mm 120 --taper 0.5 \
-    --sweep-deg 15 --tip round -o blended_wing.stl
+    --sweep-deg 15 --dihedral-deg 4 --washout-deg -3 \
+    --tip round -o blended_wing.stl
 ```
+
+**Output:**
+```
+Root profile : root.out
+Tip  profile : tip.out
+
+Building wing 'wing_1098_to_1097':
+  Span        : 350.0 mm
+  Root chord  : 120.0 mm
+  Tip chord   : 60.0 mm  (taper 0.5)
+  Sweep       : 15.0°
+  Dihedral    : 4.0°
+  Washout     : -3.0°
+  Tip style   : round
+  Sections    : 20
+
+Wrote blended_wing.stl  (2638 triangles)
+```
+
+E1098 at the root blends smoothly into E1097 at the tip — both Eppler designs
+from the NASA TM80210 report, with slightly different section geometries.
+The resulting file `blended_wing.stl` is included in this folder as a
+ready-to-use reference model.
 
 ### High-resolution model for rendering
 ```bash
