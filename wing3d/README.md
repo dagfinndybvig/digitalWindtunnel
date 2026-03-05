@@ -86,6 +86,24 @@ python wing_to_stl.py profile.out \
     --tip round -o swept_wing.stl
 ```
 
+**Output:**
+```
+Root profile : profile.out
+Tip  profile : profile.out
+
+Building wing 'wing_NACA2412':
+  Span        : 300.0 mm
+  Root chord  : 100.0 mm
+  Tip chord   : 45.0 mm  (taper 0.45)
+  Sweep       : 20.0°
+  Dihedral    : 5.0°
+  Washout     : -3.0°
+  Tip style   : round
+  Sections    : 20
+
+Wrote swept_wing.stl  (2682 triangles)
+```
+
 ### Different root and tip airfoils (shape interpolation)
 ```bash
 # Run the Eppler program twice to get two profile.out files
