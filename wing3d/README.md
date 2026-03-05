@@ -104,7 +104,9 @@ Building wing 'wing_NACA2412':
 Wrote swept_wing.stl  (2682 triangles)
 ```
 
-### Different root and tip airfoils (shape interpolation)
+The resulting file `swept_wing.stl` is included in this folder as a ready-to-use reference model.
+
+### Different root and tip airfoils(shape interpolation)
 ```bash
 # Run the Eppler program twice to get two profile.out files
 .\bin\profile.exe   # enter data\input\e1098.dat  → save as root.out
