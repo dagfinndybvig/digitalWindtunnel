@@ -33,6 +33,18 @@ python wing3d/wing_to_stl.py profile.out
 
 ---
 
+## Aircraft preview (mirrored pair + fuselage)
+
+Use `wing_to_aircraft_stl.py` to turn one half-wing STL into a quick aircraft-style preview:
+
+```bash
+python wing3d/wing_to_aircraft_stl.py wing3d/swept_wing.stl -o wing3d/aircraft_preview.stl
+```
+
+This script mirrors the wing to left/right sides and adds a proportional cigar-shaped fuselage.
+
+---
+
 ## Usage
 
 ```
