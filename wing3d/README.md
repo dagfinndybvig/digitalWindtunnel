@@ -43,6 +43,9 @@ python wing3d/wing_to_aircraft_stl.py wing3d/swept_wing.stl -o wing3d/aircraft_p
 
 This script mirrors the wing to left/right sides and adds a proportional cigar-shaped fuselage.
 
+<img width="589" height="513" alt="image" src="https://github.com/user-attachments/assets/118a7f17-29b0-41df-8a5e-1a611302736a" />
+
+
 ---
 
 ## Usage
