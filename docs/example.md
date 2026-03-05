@@ -252,7 +252,7 @@ Fallback that worked:
 
 Generated artifacts:
 
-- Attempted free/deck files: `data/input/e864.free`, `data/input/known_bad/e864.dat` (quarantined; segfaults in this executable)
+- Attempted free/deck files: `data/input/known_bad/e864.free`, `data/input/known_bad/e864.dat` (quarantined; segfault/non-robust behavior in this executable)
 - Working fallback deck: `data/input/e864_fxpr.dat`
 - Output: `data/output/e864_fxpr.out`
 - Plot: `assets/images/e864.png`
