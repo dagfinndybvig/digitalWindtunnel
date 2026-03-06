@@ -33,21 +33,6 @@ python wing3d/wing_to_stl.py profile.out
 
 ---
 
-## Aircraft preview (mirrored pair + fuselage)
-
-Use `wing_to_aircraft_stl.py` to turn one half-wing STL into a quick aircraft-style preview:
-
-```bash
-python wing3d/wing_to_aircraft_stl.py wing3d/swept_wing.stl -o wing3d/aircraft_preview.stl
-```
-
-This script mirrors the wing to left/right sides and adds a proportional cigar-shaped fuselage.
-
-<img width="589" height="513" alt="image" src="https://github.com/user-attachments/assets/118a7f17-29b0-41df-8a5e-1a611302736a" />
-
-
----
-
 ## Usage
 
 ```
@@ -220,3 +205,19 @@ With defaults (`sections=20`, ~60 profile points): roughly **2 500 triangles**.
 5. **Write** — outputs an ASCII STL with outward-facing normals.
 
 No external libraries are used — everything is pure Python.
+
+## Aircraft preview (mirrored pair + fuselage)
+
+Use `wing_to_aircraft_stl.py` to turn one half-wing STL into a quick aircraft-style preview:
+
+```bash
+python wing3d/wing_to_aircraft_stl.py wing3d/swept_wing.stl -o wing3d/aircraft_preview.stl
+```
+
+This script mirrors the wing to left/right sides and adds a proportional cigar-shaped fuselage.
+
+<img width="589" height="513" alt="image" src="https://github.com/user-attachments/assets/118a7f17-29b0-41df-8a5e-1a611302736a" />
+
+
+---
+
