@@ -35,7 +35,7 @@ PROGRAM Profile
 
 <br>A scientific report from NASA (TM80210) about the software is enclosed as pdf. In the report you find the original code and some illustrations.<br>
 
-The Eppler program outputs a file called `profile.out` in the current working directory. I have added a Python script called `src/plot_data.py` that generates an image of the wing profile and a velocity distribution based on this, saving the result as `combined_panel.png` (or a custom output file). Below you see the panel plotted after using the E1098 data as input. This is basically the same type of panel as Figure 7 in the TM80210 report, which is incidentially based on airfoil e1097.
+The Eppler program outputs a file called `profile.out` in the current working directory. I have added a Python script called `src/plot_data.py` that generates an image of the wing profile and a velocity distribution based on this, saving the result as `combined_panel.png` (or a custom output file). Below you see the panel plotted after using the E1098 data as input. This is basically the same type of panel as Figure 7 in the TM80210 report, which is incidentially based on airfoil e1097. Also it is the same type of figure that we find in the book on airfoils. So it seems that in terms of historical reconstruction we are getting somewhere.<br>
 
 If you want a complete worked walkthrough (baseline plus thicker/thinner variants, input decks, plots, and interpretation), see [docs/example.md](docs/example.md).
 
@@ -46,8 +46,6 @@ If you want a complete worked walkthrough (baseline plus thicker/thinner variant
 In the output you will also see `ALPHA0`, which is the **zero-lift angle of attack** for the analyzed airfoil in this model setup. This is important because it is the reference shift between geometric angle and aerodynamic loading: it helps interpret where lift starts to build, compare airfoil variants, and read angle-dependent performance tables consistently.
 
 <img width="537" height="558" alt="image" src="https://github.com/user-attachments/assets/d12b38bf-6944-40fd-ab79-27c775a8328a" />
-
-Also it is the same type of figure that we find in the book on airfoils. So it seems that in terms of historical reconstruction we are getting somewhere.<br>
 
 In the interest of completeness I have uploade a user manual for the Eppler program that hails from the 1970's. It even makes reference to decks of punch cards for input. It may be instructive to take a look at it in order to undertand where the formatting of the program's data is coming from:
 
