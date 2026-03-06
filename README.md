@@ -18,7 +18,7 @@ Here you find a version of the program, only known as the Eppler program.
 
 It was written in ancient Fortran but has been modernized to run on current Linux and Windows. Consult the legacy [readme](docs/readme.txt) for the back story.
 
-Also there are some interesting historical comments in the code itself. Especially this:<br>
+Also there are some interesting historical comments in the code itself:<br>
 
 ```bash
 PROGRAM Profile
@@ -35,13 +35,13 @@ PROGRAM Profile
 
 <br>A scientific report from NASA (TM80210) about the software is enclosed as pdf. In the report you find the original code and some illustrations.<br>
 
-The Eppler program outputs a file called `profile.out` in the current working directory. I have added a Python script called `src/plot_data.py` that generates an image of the wing profile and a velocity distribution based on this, saving the result as `combined_panel.png` (or a custom output file). Below you see the panel plotted after using the E1098 data as input:
+The Eppler program outputs a file called `profile.out` in the current working directory. I have added a Python script called `src/plot_data.py` that generates an image of the wing profile and a velocity distribution based on this, saving the result as `combined_panel.png` (or a custom output file). Below you see the panel plotted after using the E1098 data as input. This is basically the same type of panel as Figure 7 in the TM80210 report, which is incidentially based on airfoil e1097.
 
 If you want a complete worked walkthrough (baseline plus thicker/thinner variants, input decks, plots, and interpretation), see [docs/example.md](docs/example.md).
 
 <img width="2400" height="1800" alt="e1098 panel" src="assets/images/e1098.png" />
 
-This is basically the same type of panel as Figure 7 in the TM80210 report, which is incidentially based on airfoil e1097.
+
 
 In the output you will also see `ALPHA0`, which is the **zero-lift angle of attack** for the analyzed airfoil in this model setup. This is important because it is the reference shift between geometric angle and aerodynamic loading: it helps interpret where lift starts to build, compare airfoil variants, and read angle-dependent performance tables consistently.
 
