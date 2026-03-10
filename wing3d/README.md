@@ -188,6 +188,9 @@ triangles ≈ 2 × sections × profile_points  +  2 × (profile_points − 2)
 
 With defaults (`sections=20`, ~60 profile points): roughly **2 500 triangles**.
 
+<img width="1024" height="768" alt="3d_photopng" src="https://github.com/user-attachments/assets/075e68f6-f95b-4913-be2a-e747ad51728b" />
+<i>Photo: Thomas Lykke Nordahl</i>
+
 ---
 
 ## How it works
